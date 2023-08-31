@@ -25,7 +25,6 @@ class ChatsController extends Controller
   */
   public function index()
   {
-    return 'hello world';
     $cannedMessages = CannedMessage::all();
     $contactNotifications = ContactNotification::select('contact_id')->where('customer_id', '=', Auth::user()->id)->groupBy('contact_id')->get();
     return view('chat', compact(['cannedMessages', 'contactNotifications']));
