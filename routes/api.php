@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:api')->get('get-contacts', 'ChatsController@getUserContacts');
+
+// Route::middleware('auth:api')->put('user/{user}/online', 'UserOnlineController');
+
+// Route::middleware('auth:api')->put('user/{user}/offline', 'UserOfflineController');
