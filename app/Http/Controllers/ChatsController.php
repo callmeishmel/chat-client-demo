@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use App\Message;
-use App\CannedMessage;
-use App\ContactNotification;
+use App\Models\User;
+use App\Models\Message;
+use App\Models\CannedMessage;
+use App\Models\ContactNotification;
 use App\Events\MessageSent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

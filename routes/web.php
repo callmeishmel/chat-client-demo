@@ -50,5 +50,3 @@ Route::post('pusher/presence-webhook', [PusherWebhookController::class, 'presenc
 
 Route::get('pusher/api-test', [PusherWebhookController::class, 'pusherAPICall']);
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
